@@ -1,0 +1,147 @@
+.request
+  background: #010d17
+  background: url(../img/Request_bg.jpg) left center no-repeat/auto
+
+.request-box
+  padding: 40px 0px
+
+.request-ttl
+  font-size: 30px
+  font-weight: 200
+  color: #f7af1f
+
+.request-form-box
+  max-width: 420px
+  margin: 0 auto
+
+.request-descr
+  font-size: 16px
+  color: white
+  font-weight: 100
+
+.request input[type="radio"]
+  display: none
+
+.request-form
+  padding: 20px 0px
+
+.request-form .btn-add
+  width: 100%
+  max-width: 100%
+  &:hover
+    box-shadow: 0px 0px 15px 3px rgba(232,187,7,1)
+  
+.request-present
+  display: block
+  width: 100%
+  color: #f7af1f
+  font-weight: 200
+  margin-bottom: 10px
+
+.request-form-field
+  background: rgba(88, 96, 102, 0.55)
+  border: 1px solid #586066
+  border-radius: 6px
+  height: 40px
+  margin-bottom: 10px
+  width: 100%
+  padding: 0px 10px
+  color: white
+  &:focus
+    border: 1px solid #F4BB49
+  
+.request-drive-radio
+  display: none
+  
+.request-radio-lbl
+  border-bottom: 1px  dotted white
+  position: relative
+  color: white
+  opacity: 0.3
+  transition: 0.4S
+  margin-right: 10px
+  font-weight: 200
+  &:hover
+    opacity: 1
+    cursor: pointer
+  &:after
+    content: ''
+    position: absolute
+    bottom: -30px
+    left: 0px
+    width: 100%
+    height: 30px
+    transition: 0.4S
+    width: 0px
+
+
+input:checked+.request-radio-lbl
+  opacity: 1
+  border-bottom: 1px  dashed transparent
+
+input:checked+.request-radio-lbl:after
+  width: 100%
+  background: url('../img/Request_lbl_check.png') center top no-repeat/auto
+
+
+.request-drive-box
+  padding: 10px 0px
+  display: flex
+  flex-flow: wrap
+  justify-content: space-between
+
+
+.request-car-box
+  padding: 10px 0px 30px
+  display: flex
+  flex-flow: wrap
+  justify-content: space-between
+
+input:checked+.request-radio-group-lbl
+  opacity: 1
+
+input:checked+.request-radio-group-lbl:after
+  width: 100%
+  background: url('../img/Request_lbl_check.png') center top no-repeat/auto
+
+.request-radio-group-lbl
+  position: relative
+  color: white
+  opacity: 0.3
+  transition: 0.4S
+  width: 20%
+  &:hover
+    opacity: 1
+    cursor: pointer
+  &:after
+    content: ''
+    position: absolute
+    bottom: -30px
+    left: 0px
+    width: 100%
+    height: 30px
+    transition: 0.4S
+    width: 0px
+
+@media(min-width: 540px)
+  .request-form  .btn-add
+    margin: 0px!important
+
+@media(min-width: 768px)
+  .request-drive-box
+    justify-content: flex-start
+  .request-radio-lbl
+    margin-right: 20px
+  .request
+    background: #010d17
+    background: url(../img/Request_bg.jpg) left center no-repeat/cover
+  .request-form-box
+    margin: 0px
+
+@media(min-width: 992px)
+  .request
+    background: #010d17
+  .request-box
+    background: url(../img/Request_bg.jpg) right center no-repeat/contain
+  .request-form-box
+    margin: 0px

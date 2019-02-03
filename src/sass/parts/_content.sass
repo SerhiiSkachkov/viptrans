@@ -1,0 +1,131 @@
+@import "../helpers/mixins"
+@import "../helpers/variables"
+
+html 
+  -webkit-box-sizing: border-box
+          box-sizing: border-box
+  -ms-overflow-style: scrollbar
+
+*, ::after, ::before 
+  -webkit-box-sizing: inherit
+          box-sizing: inherit
+
+.wrapper
+  width: 100%
+  padding-right: 15px
+  padding-left: 15px
+  margin-right: auto
+  margin-left: auto
+
+@media (min-width: 576px) 
+  .wrapper
+    max-width: 540px 
+
+@media (min-width: 768px) 
+  .wrapper
+    max-width: 720px 
+
+@media (min-width: 992px) 
+  .wrapper
+    max-width: 960px 
+
+@media (min-width: 1200px) 
+  .wrapper
+    max-width: 1030px
+
+body
+    display: block
+    width: 100%
+    height: 100%
+    background-color: #fff
+
+.menu-open
+  overflow: hidden
+
+.clearfix:after 
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+.main-wrap
+    margin: 0 auto  
+    overflow: hidden
+
+.main-wrap-padding
+    padding-top: 58px
+
+.main-wrap-styled
+    padding-bottom: 30px
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(119,119,119,0.30) 100%)  
+    
+.hidden
+  display: none
+
+.breadcrumbs
+  padding: 10px 0px
+  
+.breadcrumbs-list
+  display: flex
+  flex-flow: wrap
+
+.breadcrumbs-list li span
+  padding: 0px 3px
+
+.breadcrumbs-list a
+  color: black
+  border-bottom: 1px solid black
+  &:hover
+    color: orange
+    border-bottom: 1px solid orange
+
+@media(min-width: 768px)
+  .breadcrumbs
+    padding: 20px 0px
+  .breadcrumbs-list
+    justify-content: center
+
+@media(min-width: 992px)
+  .breadcrumbs
+    padding: 30px 0px
+
+.about
+    margin-top: -125px
+    background: 
+    padding: 70px 0px 30px
+    background: url('../img/Parking_bg.jpg') center top no-repeat/cover
+
+.about-ttl
+  font-weight: 300
+  font-size: 20px
+  text-align: center
+  margin: 0px auto 20px
+  max-width: 470px
+
+.about-content
+  padding: 15px 10px
+  border-radius: 5px
+  background: rgba(255, 255, 255, 0.57)
+
+.about-content p
+  margin-bottom: 15px
+    
+@media(min-width: 768px)
+  .about-content
+    padding: 25px 15px
+  .about-ttl
+    font-size: 25px
+  .about-content p
+    font-size: 16px
+  .about
+    margin-top: -136px
+
+@media(min-width: 992px)
+  .about-content
+    padding: 45px 35px
+  .about-ttl
+    font-size: 34px
+    max-width: 690px
+  .about
+    margin-top: -112px

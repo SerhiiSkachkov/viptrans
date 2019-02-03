@@ -1,0 +1,111 @@
+.header-main-nav
+    display: none
+    @media(min-width: 768px)
+        display: block
+
+@media(min-width: 768px)
+    .header-main-nav .nav-list
+        display: flex
+    .nav-list a
+        position: relative
+        color: black
+        &:hover
+            &:before
+                left: 0
+                transition: all .3s
+                border-bottom: 2px solid #ffe94d
+                width: 100%
+    .nav-list a.active
+        &:before
+            left: 0
+            transition: 0.3s
+            border-bottom: 2px solid #ffe94d
+            width: 100%
+    .nav-list a:before
+        content: ''
+        transition: 0.3s
+        display: block
+        position: absolute
+        width: 0
+        border-bottom: 1px solid transparent
+        left: 50%
+        bottom: -3px
+    .header-main-nav .nav-list li 
+        margin: 0px 7px
+
+@media(min-width: 992px)
+    .header-main-nav .nav-list li 
+        margin: 0px 10px
+    .nav-list a
+        padding: 0px 5px
+        font-size: 16px
+
+.header-mobile-nav
+    width: 80%
+    max-width: 450px
+    position: fixed
+    z-index: 99
+    background-color: #f3f3f3
+    transition: 0.5s
+    top: 0px
+    left: -100%
+    border-right: 1px solid gray
+    height: 100vh!important
+    padding: 20px 0px
+    @media(min-width: 768px)
+        display: none
+
+.header-mobile-nav.is-active
+    left: 0px
+
+.header-mobile-nav li
+    margin-bottom: 10px
+    font-size: 18px
+
+.header-mobile-nav a
+    display: block
+    padding: 0px 15px
+    color: black
+    &:hover
+        background-color: #ffe94d
+
+.header-mobile-nav--open
+    left: 0px
+
+.App-header
+    position: absolute
+    top: 0px
+    left: 0px
+    right: 0px
+    width: 100%
+    z-index: 90
+
+.App-header-fixed
+    position: fixed
+    
+.header
+    position: relative
+    padding: 15px 0px
+    width: 100%
+
+.header-fixed
+    position: fixed
+    
+.logo
+    width: 120px
+
+.logo img
+    vertical-align: middle
+    
+.header-box
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+@media(min-width: 768px)
+    .logo
+        width: 150px
+
+@media(min-width: 992px)
+    .logo
+        width: 300px

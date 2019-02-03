@@ -1,0 +1,493 @@
+.order-content
+    background: #f3f3f3
+    padding: 10px 5px
+    font-weight: 300
+
+.order-head
+    display: flex
+    justify-content: space-between
+
+.order-box
+    display: flex
+    flex-direction: column
+.order-side
+    order: 1
+
+.order-content
+    order: 2
+
+.order-head-arrow
+    position: relative
+    width: 20px
+    height: 100%
+    overflow: hidden
+
+.order-head-arrow:before
+    content: ''
+    display: block
+    width: 30px
+    height: 30px
+    border-right: 4px solid gray
+    border-bottom: 4px solid gray
+    transform: rotate(-61deg) skew(-30deg) translate(-12px,-13px)
+
+.order-head li
+    flex: auto
+    display: flex
+    font-size: 13px
+    padding: 5px 0px
+    justify-content: space-between
+
+.order-head li .order-tabs-txt
+    border-bottom: 2px solid transparent
+    color: black
+    line-height: 25px
+
+.order-head li.active
+    .order-tabs-txt
+        border-bottom: 2px solid #ef7f1a
+
+.order-head li.active .order-head-arrow:before
+    border-right: 4px solid green
+    border-bottom: 4px solid green
+
+.order-way
+    padding: 10px 0px
+    display: flex
+    justify-content: space-between
+
+
+.btn-way
+    background: #512ca7
+    color: white
+    width: 49%
+    text-align: center
+    height: 50px
+    line-height: 50px
+    &:hover
+        background: #efae00
+
+.select-field
+    width: 100%
+    height: 50px
+    border: 2px solid #efae00
+    margin-bottom: 10px
+    padding: 0px 5px
+    background: url('../img/shape.png') 97% 15px no-repeat/auto,white
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    text-align: center
+    color: gray
+
+.order-hotel
+    margin-bottom: 10px
+
+
+.order-hotel input
+    display: block
+    width: 100%
+    height: 50px
+    padding: 0px 5px
+    border: 2px solid lightgray
+    &:focus
+        border: 2px solid #512ca7
+
+.order-departure-field
+    border: 2px solid #efae00
+    height: 50px
+    width: 100%
+    margin-bottom: 10px
+    padding: 0px 5px
+    transition: 0.5s
+    &:focus
+        border: 2px solid #512ca7
+
+.order-departure-field-bg
+    padding-left: 50px
+    background: url('../img/calendar.png') 10px  center no-repeat/auto, white
+
+.order-contact-field
+    width: 100%
+    height: 50px
+    padding: 0px 5px
+    border: 2px solid lightgray
+    margin-bottom: 10px
+    &:focus
+        border: 2px solid #512ca7
+
+.order-cars
+    padding: 20px 0px 20px
+    display: flex
+    flex-flow: wrap
+    justify-content: space-between
+
+.order-cars input[type="radio"]
+    display: none
+
+.order-cars-lbl
+    width: 48%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin-bottom: 10px
+    transition: 0.5s
+    &:hover
+        cursor: pointer
+        opacity: 1
+        .order-cars-name
+            background: #512ca7
+            color: white
+
+.order-cars-lbl img
+    width: 100%
+
+.order-cars-name
+    padding: 2px 0px
+    font-weight: 400
+    text-align: center
+    transition: 0.5s
+
+.order-comment
+    width: 100%
+    height: 100px
+    padding: 5px 
+    border: 2px solid lightgray
+    &:focus
+        border: 2px solid #512ca7      
+
+.order-cars-lbl
+    opacity: 0.7
+
+.order-check
+    padding: 10px 0px
+
+.order-check input[type="checkbox"]
+    display: none
+
+.order-check-lbl
+    padding: 10px 0px
+    display: inline-block
+    position: relative
+    padding-left: 40px
+    &:before
+        content: ''
+        display: block
+        position: absolute
+        left: 0px
+        top: 8px 
+        width: 20px
+        height: 20px
+        background-color: white
+    &:after
+        content: ''
+        display: none
+        width: 10px
+        height: 15px
+        border-bottom: 2px solid #512ca7  
+        border-right: 2px solid #512ca7  
+        position: absolute
+        left: 5px
+        top: 8px
+        transform: rotate(45deg)
+
+input:checked+.order-check-lbl:after
+    display: block
+
+input:checked+.order-cars-lbl
+  opacity: 1
+
+input:checked+.order-cars-lbl > .order-cars-name
+    background: #512ca7
+    color: white
+
+.btn-order-submit
+    background-color: #efae00
+    border: 2px solid #efae00
+    width: 100%
+    font-size: 14px
+    line-height: 50px
+    text-align: center
+    height: 50px
+    font-weight: 300
+    color: white
+    &:hover
+        border: 2px solid #512ca7
+        background-color: #512ca7
+
+.order-side-ttl
+    font-size: 20px
+    color: #ef7f1a
+    margin: 10px 0px
+
+.order-side p
+    margin-bottom: 10px
+
+.order-side-btn-box
+    padding: 10px 0px
+
+.btn-order
+    display: block
+    width: 100%
+    height: 50px
+    color: white
+    text-align: center
+    display: flex
+    justify-content: center
+    vertical-align: center
+    margin-bottom: 10px
+    .icon
+        font-size: 36px
+        line-height: 50px
+        font-weight: 100
+        margin-right: 5px
+
+.btn-order-txt
+    font-size: 14px
+    line-height: 50px
+
+.btn-order-way
+    border: 2px solid #512ca7
+    background-color: #512ca7
+    &:hover
+        border: 2px solid #efae00
+        background: #efae00
+
+.btn-order-donload
+    border: 2px solid black
+    background-color: black
+    &:hover
+        border: 2px solid #efae00
+        background: #efae00
+
+.order-tab-content-check
+    padding: 10px 0px
+
+.order-tab-content-ttl
+    text-align: center
+    color: gray
+    font-size: 18px
+    font-weight: 500
+    padding: 10px 0px
+
+.order-info-data-field
+    height: 50px
+    background: #512ca7
+    margin-bottom: 10px
+    line-height: 50px
+    color: white
+    padding: 0px 5px
+
+.order-info-data-field-way
+    background: #efae00
+
+.order-info-way-field
+    background-color: white
+    margin-bottom: 10px
+    color: black
+    height: 50px
+    line-height: 50px
+    padding: 0px 5px
+
+.order-info-location-field
+    height: 50px
+    line-height: 50px
+    border: 2px solid #efae00
+    margin-bottom: 10px
+    padding: 0px 5px
+    background-color: white
+
+.order-info-location-field-bg
+    padding-left: 50px
+    background: url('../img/calendar.png') 10px  center no-repeat/auto, white
+
+.order-info-places-field
+    height: 50px
+    line-height: 50px
+    border: 2px solid #efae00
+    margin-bottom: 10px
+    padding: 0px 5px
+    background-color: white
+
+.order-info-car
+    padding: 10px 0px
+    text-align: center
+
+.order-info-car-ttl
+    font-weight: 300
+    font-size: 16px
+    text-align: center
+    padding: 10px 0px
+
+.order-info-car-img
+    max-width: 200px
+    margin: 0 auto
+
+.order-info-car-img img
+    display: block
+    width: 100%
+
+.order-info-car-name
+    font-weight: 300
+    background-color: #512ca7
+    color: white
+    display: inline-block
+    padding: 3px 5px
+
+.order-info-comment
+    background: white
+    padding: 20px 10px
+    margin-bottom: 10px
+
+.order-return-form-box
+    padding: 10px
+    text-align: center
+
+.order-return-form
+    color: red
+    border-bottom: 1px solid red
+    &:hover
+        color: #20a720
+        border-bottom: 1px solid #20a720
+.order-info-price-box
+    text-align: center
+    padding: 10px 0px 20px
+
+.order-info-price-box span
+    color: #20a720
+    font-weight: bold
+
+.btn-info-add
+    width: 100%
+    height: 50px
+    line-height: 50px
+    color: white
+    background: #efae00
+    margin-bottom: 10px
+    text-align: center
+    border: 2px solid #efae00
+    font-weight: 200
+    &:hover
+        background-color: white
+        color: black
+
+.btn-info-add-online
+    background: #20a720
+    border: 2px solid #20a720
+
+
+@media(min-width: 768px)
+    .order-content
+        padding: 10px
+    .order-cars-lbl
+        width: 23%
+        margin-bottom: 0px
+    .order-location-box
+        display: flex
+        justify-content: space-between
+    .order-location-box .select-field
+        width: 32.5%
+    .order-head li
+        font-size: 17px
+        width: 33.3%
+    .order-departure
+        display: flex
+        justify-content: space-between
+    .order-departure
+        margin-bottom: 10px
+    .order-departure-field
+        width: 32.5%
+        margin-bottom: 0px
+    .order-contact
+        display: flex
+        flex-flow: wrap
+        justify-content: space-between  
+    .order-contact-field
+        width: 49.3%
+    .order-places-box
+        display: flex
+        justify-content: space-between
+        flex-flow: wrap
+    .order-places-box .select-field
+        width: 49.3%
+    .order-check
+        text-align: right
+    .order-side-btn-box
+        display: flex
+    .order-head-arrow
+        margin-right: 5px
+    .order-head-arrow:before
+        transform: rotate(-60deg) skew(-31deg) translate(-12px,-12px)
+    .order-info-data
+        display: flex
+        flex-flow: wrap
+        justify-content: space-between
+        text-align: center
+    .order-info-data-field
+        width: 49.3%
+    .order-info-way-box
+        display: flex
+        flex-flow: wrap
+    .order-info-way-field
+        width: 50%
+    .order-info-way-field-hotel
+        width: 100%
+    .order-info-location-box
+        display: flex
+        justify-content: space-between
+    .order-info-location-field
+        width: 32.6%
+    .order-info-places-box
+        display: flex
+        flex-flow: wrap
+        justify-content: space-between
+        text-align: center
+    .order-info-places-field
+        width: 49.3%
+    .order-info-price-box
+        font-size: 20px
+    .order-info-price-box span
+        font-size: 25px
+    .order-info-btn-box
+        display: flex
+    .btn-info-add
+        font-size: 20px
+        height: 70px
+        line-height: 70px
+    .btn-order
+        height: 70px
+        line-height: 70px
+    .btn-order-txt
+        font-size: 20px
+        font-weight: 200
+        line-height: 70px
+    .btn-order .icon
+        line-height: 70px
+    .order-side-ttl
+        font-size: 30px
+    .order-head a
+        flex: auto
+        text-align: center
+    .btn-order-submit
+        font-size: 20px
+        line-height: 70px
+        height: 70px
+    .order-tabs-txt
+        font-size: 16px
+        margin: 0 auto
+
+@media(min-width: 992px)
+    .order-box
+        display: flex
+        flex-flow: wrap
+        justify-content: space-between
+    .order-side
+        order: 2
+        width: 37%
+    .order-content
+        order: 1
+        width: 60%
+    .order-side-ttl
+        text-align: center
+    .order-side-btn-box
+        flex-direction: column

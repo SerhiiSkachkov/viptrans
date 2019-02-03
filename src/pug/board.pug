@@ -1,0 +1,191 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900" rel="stylesheet")
+        link(rel='stylesheet' href='css/jquery.fancybox.min.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title new
+    body
+        
+        include components/header.pug
+
+        main.main-wrap.main-wrap-styled.main-wrap-padding
+            .breadcrumbs
+                .wrapper
+                  ul.breadcrumbs-list
+                    li
+                        a(href="") Главная
+                        span /
+                    li Услуги
+            section.order
+                .wrapper
+                    .order-box
+                        .order-content
+                            ul.order-head
+                                li.active(data-tab="#order-data")
+                                    span.order-tabs-txt Ввод данных
+                                    span.order-head-arrow
+                                li(data-tab="#order-check")
+                                    span.order-tabs-txt Проверка
+                                    span.order-head-arrow
+                                li(data-tab="#order-confirm")
+                                    span.order-tabs-txt Подтверждение
+
+                            #order-data.order-tab-content
+                                form
+                                    .order-way
+                                        a.btn-way(href="") В одну сторону
+                                        a.btn-way(href="") В обе стороны
+                                    .order-location-box
+                                        select#order-way-from.select-field()
+                                            option От аэропорта
+                                            option Аэропорт
+                                            option От аэропорта
+
+                                        select#order-way-to.select-field()
+                                            option Аэропорт
+                                            option От аэропорта
+                                            option От аэропорта
+
+                                        select#order-way-places.select-field()
+                                            option Откуда
+                                            option От аэропорта
+                                            option От аэропорта
+                                    .order-hotel
+                                        input(type="text" name="hotel" placeholder="Адрес или название отеля")
+                                    .order-departure
+                                        input#order-time-departure.order-departure-field.order-departure-field-bg(type="text" placeholder="Дата вылета")
+                                        input#order-time-arrival.order-departure-field.order-departure-field-bg(type="text" placeholder="Время прибытия")
+                                        input#departure-airlines.order-departure-field(type="text" placeholder="Номер рейса")
+                                    .order-contact
+                                        input.order-contact-field(type="text" name="mame" placeholder="Имя")
+                                        input.order-contact-field(type="text" name="surname" placeholder="Фамилия")
+                                        input.order-contact-field(type="text" name="phone" placeholder="Номер телефона")
+                                        input.order-contact-field(type="text" name="email" placeholder="E-mail")
+                                    .order-places-box
+                                        select#order-car-places.select-field()
+                                            option Кол-во пассажиров
+                                            option Кол-во пассажиров
+                                            option Кол-во пассажиров
+                                        select#order-car-child-places.select-field()
+                                            option Детские кресла
+                                            option Детские кресла
+                                            option Детские кресла
+                                        select#order-car-buster.select-field()
+                                            option Бустер
+                                            option Бустер
+                                            option Бустер
+                                        select#order-car-small-child-places.select-field()
+                                            option Кресло младенцу
+                                            option Кресло младенцу
+                                            option Кресло младенцу
+                                    .order-cars
+                                        input(type="radio" id="mercedes_e" name="car" value="mercedes_e" checked="checked")
+                                        label.order-cars-lbl(for="mercedes_e")
+                                            .order-cars-lbl-img
+                                                img(src="./img/mercedes_e.png" alt="img")
+                                            h3.order-cars-name Мercedes Е class
+                                        input(type="radio" id="mercedes_s" name="car" value="mercedes_s")
+                                        label.order-cars-lbl(for="mercedes_s")
+                                            .order-cars-lbl-img
+                                                img(src="./img/mercedes_s.png" alt="img")
+                                            h3.order-cars-name Мercedes S class
+                                        input(type="radio" id="mercedes_v" name="car" value="mercedes_v")
+                                        label.order-cars-lbl(for="mercedes_v")
+                                            .order-cars-lbl-img
+                                                img(src="./img/mercedes_v.png" alt="img")
+                                            h3.order-cars-name Мercedes Vito
+                                        input(type="radio" id="mercedes_via" name="car" value="mercedes_via")
+                                        label.order-cars-lbl(for="mercedes_via")
+                                            .order-cars-lbl-img
+                                                img(src="./img/mercedes_via.png" alt="img")
+                                            h3.order-cars-name Мercedes Viano
+                                    textarea.order-comment( placeholder="Пожелания")
+                                    .order-check
+                                        input#order-check(type="checkbox")
+                                        label.order-check-lbl(for="order-check") Квитанция для бухгалтерии
+                                    a.js-order.btn-order-submit(href="#order-check") Заказать трансфер
+
+                       
+                            #order-check.order-tab-content.order-tab-content-check
+                                h3.order-tab-content-ttl Проверьте Ваши данные
+                                .order-info-box
+                                    .order-info-data   
+                                        .order-info-data-field
+                                            span Ф.И.О: 
+                                            span Иванов Иван Иванович
+                                        .order-info-data-field
+                                            span tel: 
+                                            span +380670676767
+                                        .order-info-data-field
+                                            span email: 
+                                            span ivaniv.ivan.ibanivich@gmai.com
+                                        .order-info-data-field.order-info-data-field-way Трансфер в одну сторону
+                                    .order-info-way-box
+                                        .order-info-way-field
+                                            span 
+                                                strong От: 
+                                            span Аэропорта Ларнаки
+                                        .order-info-way-field
+                                            span 
+                                                strong До: 
+                                            span Протарас-Пернера
+                                        .order-info-way-field.order-info-way-field-hotel
+                                            span 
+                                                strong Адрес: 
+                                            span Гостиница Hilton
+                                    .order-info-location-box
+                                        .order-info-location-field.order-info-location-field-bg 20/03/18
+                                        .order-info-location-field.order-info-location-field-bg 20/03/18, 20:35
+                                        .order-info-location-field Рейс: RTYu789
+                                    .order-info-places-box
+                                        .order-info-places-field Кол-во пассажиров: 5
+                                        .order-info-places-field Детские кресла: 5
+                                        .order-info-places-field Бустер: 1
+                                        .order-info-places-field Кресло младенцу: 0
+                                    .order-info-car
+                                        .order-info-car-ttl Выбранный вами автомобиль
+                                        .order-info-car-img
+                                            img(src="./img/mercedes_e.png" alt="img")
+                                        .order-info-car-name Мercedes Е class
+                                    .order-info-comment
+                                        strong Ваши пожелания: 
+                                        | По прилету 3 порции морожена детям и бутылку шампанского.
+                                    .order-return-form-box
+                                        a.js-order.order-return-form(href="#order-data") Вернуться к заполнению формы
+                                    .order-info-price-box Общая цена трансфера: 
+                                        span 970 евро
+                                    .order-info-btn-box
+                                        a.btn-info-add.btn-info-add(href="") Оплптить по приезду
+                                        a.btn-info-add.btn-info-add-online(href="") Оплптить онлайн*
+
+                            #order-confirm.order-tab-content 13
+
+
+                        .order-side
+                            .order-side-ttl Заказ трансфера
+                            .order-side-content
+                                p Все трансферы индивидуальные
+
+                                p При заказе такси/трансфера в обе стороны скидка 5%
+
+                                p Детские кресла, бустеры включены в цену трансфера 
+
+                                p Время ожидания в аэропорту включено в цену трансфера номер рейса отслеживается нами (не стоит беспокоиться в случае задержки рейса или преждевременной посадки), водитель будет в аэропорту во время посадки самолёта 
+
+                                p Водитель будет держать в руках табличку при выходе из аэропорта на которой будет написано ваше Имя и Фамилия указанные при заказе трансфера
+                            .order-side-btn-box
+                                a.btn-order.btn-order-way(href="")
+                                    span.icon.icon-route
+                                    span.btn-order-txt Длительность поездки
+                                a.btn-order.btn-order-donload(href="" download) 
+                                    span.icon.icon-file
+                                    span.btn-order-txt Подробный прайс
+
+
+        include components/footer.pug                        
+        include components/script.pug

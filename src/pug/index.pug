@@ -1,0 +1,257 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900" rel="stylesheet")
+        link(rel='stylesheet' href='css/jquery.fancybox.min.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title new
+    body
+        
+        include components/header.pug
+
+        main.main-wrap
+            section.poster
+                .poster-wraper
+                    .wrapper
+                        .poster-box.js-poster-slider
+                            .poster-item
+                                .poster-img
+                                    img(src="./img/poster_ford.png" alt="car")
+                                .poster-about
+                                    .poster-name  Ford Mustang
+                                    .poster-descr Изначальный вариант был создан на базе агрегатов семейного седана Ford Falcon Первый серийный Mustang сошёл с конвейера 9 марта 1964 года как модель 1965 года
+                                    .poster-inform
+                                        .poster-inform-box
+                                            .poster-inform-item
+                                                .poster-inform-about Обьем Двигателя
+                                                .poster-inform-output 5.0 л
+                                            .poster-inform-item 
+                                                .poster-inform-about Трансмисия 
+                                                .poster-inform-output Автоматическая 
+                                            .poster-inform-item 
+                                                .poster-inform-about Привод
+                                                .poster-inform-output Передний
+                                            .poster-inform-item 
+                                                .poster-inform-about Количество мест
+                                                .poster-inform-output 4 с водителем
+                                        .poster-inform-box 
+                                            .poster-inform-item 
+                                                .poster-inform-about Комфорт 
+                                                .poster-inform-rating 
+                                                    .poster-inform-rating-output(style="width: 100%;")
+                                            .poster-inform-item 
+                                                .poster-inform-about Вместимость
+                                                .poster-inform-rating 
+                                                    .poster-inform-rating-output(style="width: 28%;")
+                                            .poster-inform-item 
+                                                .poster-inform-about Экономичность 
+                                                .poster-inform-rating 
+                                                    .poster-inform-rating-output(style="width: 42%;")
+                                            .poster-price-box
+                                                .poster-price
+                                                    span $350
+                                                    | /День
+                                                a.btn-add(href="/")
+                                                    .icon.icon-house-key
+                                                    span Забронировать 
+                            .poster-item
+                                .poster-img
+                                    img(src="./img/poster_chevrolet.png" alt="car")
+                                .poster-about
+                                    .poster-name Shevrolet Suburban
+                                    .poster-descr Внедорожник класса «K3». Мировая премьера двенадцатого поколения модели состоялась в сентябре 2013 года.
+                                    .poster-inform
+                                        .poster-inform-box
+                                            .poster-inform-item
+                                                .poster-inform-about Обьем Двигателя
+                                                .poster-inform-output 5.3 л
+                                            .poster-inform-item 
+                                                .poster-inform-about Трансмисия 
+                                                .poster-inform-output Автоматическая 
+                                            .poster-inform-item 
+                                                .poster-inform-about Привод
+                                                .poster-inform-output Полный 4x4
+                                            .poster-inform-item 
+                                                .poster-inform-about Количество мест
+                                                .poster-inform-output 8 c Водителем
+                                        .poster-inform-box 
+                                            .poster-inform-item 
+                                                .poster-inform-about Комфорт 
+                                                .poster-inform-rating 
+                                                    .poster-inform-rating-output(style="width: 100%;")
+                                            .poster-inform-item 
+                                                .poster-inform-about Вместимость
+                                                .poster-inform-rating 
+                                                    .poster-inform-rating-output(style="width: 80%;")
+                                            .poster-inform-item 
+                                                .poster-inform-about Экономичность 
+                                                .poster-inform-rating 
+                                                    .poster-inform-rating-output(style="width: 30%;")
+                                            .poster-price-box
+                                                .poster-price
+                                                    span $350
+                                                    | /День
+                                                a.btn-add(href="/")
+                                                    .icon.icon-house-key
+                                                    span Забронировать
+                            .poster-item
+                                .poster-img
+                                    img(src="./img/poster_kia.png" alt="car")
+                                .poster-about
+                                    .poster-name KIA Picanto
+                                    .poster-descr Малолитражный городской автомобиль от фирмы «Kia Motors».
+                                        br
+                                        | В разработке принимали участие специалисты из европы.
+                                        br
+                                        | В Азии автомобиль продаётся под именем Morning
+
+                                    .poster-inform
+                                        .poster-inform-box
+                                            .poster-inform-item
+                                                .poster-inform-about Обьем Двигателя
+                                                .poster-inform-output 1.1 л
+                                            .poster-inform-item 
+                                                .poster-inform-about Трансмисия 
+                                                .poster-inform-output Автоматическая 
+                                            .poster-inform-item 
+                                                .poster-inform-about Привод
+                                                .poster-inform-output Передний
+                                            .poster-inform-item 
+                                                .poster-inform-about Количество мест
+                                                .poster-inform-output 4 с водителем
+                                        .poster-inform-box 
+                                            .poster-inform-item 
+                                                .poster-inform-about Комфорт 
+                                                .poster-inform-rating 
+                                                    .poster-inform-rating-output(style="width: 100%;")
+                                            .poster-inform-item 
+                                                .poster-inform-about Вместимость
+                                                .poster-inform-rating 
+                                                    .poster-inform-rating-output(style="width: 28%;")
+                                            .poster-inform-item 
+                                                .poster-inform-about Экономичность 
+                                                .poster-inform-rating 
+                                                    .poster-inform-rating-output(style="width: 42%;")
+                                            .poster-price-box
+                                                .poster-price
+                                                    span $350
+                                                    | /День
+                                                a.btn-add(href="/")
+                                                    .icon.icon-house-key
+                                                    span Забронировать                                                    
+            section.about
+                .wrapper
+                    .about-content
+                        h2.about-ttl Аренда автомобилей премиум класса в Доминиканской Республике
+                        p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо. 
+                        <p> Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо. 
+                        p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо.
+
+            section.services
+                .wrapper
+                    .services-box
+                        .services-item
+                            .services-img
+                                img(src="./img/services_dirve.png" alt="img")
+                            h3.services-ttl Свобода перемещения 
+                            .services-descr Исследуйте все уголки острова за рулем авто премиум класса 
+                        .services-item
+                            .services-img
+                                img(src="./img/services_exp.png" alt="img")
+                            h3.services-ttl Опытные водители
+                            .services-descr Устали водить автомобиль?Возьмите его в аренду вместе с водителем 
+                        .services-item
+                            .services-img
+                                img(src="./img/services_key.png" alt="img")
+                            h3.services-ttl Прямо к терминалу 
+                            .services-descr Доставим заправленный автомобиль в любую точку Доминиканы 
+                        .services-item
+                            .services-img
+                                img(src="./img/services_car.png" alt="img")
+                            h3.services-ttl Безупречное качество 
+                            .services-descr Все наши автомобили проходят ежедневный технический осмотр 
+                        .services-item
+                            .services-img
+                                img(src="./img/services_time.png" alt="img")
+                            .services-ttl Круглосуточная поддержка 
+                            .services-descr Возникли  трудности в дороге? Мы всегда рады помочь,в любое время суток 
+
+            section.request
+                .wrapper
+                    .request-box
+                        .request-form-box
+                            h2.request-ttl Оставьте заявку
+                            .request-descr И мы подберем для Вас лучший автомобиль всего за несколько минут
+                            form.request-form 
+                                .request-present Представьтесь
+                                input.request-form-field(type="text" placeholder="Ваше имя")
+                                input.request-form-field(type="text" placeholder="Телефон")
+                                .request-drive-box
+                                    .request-present Кто поведет
+                                    input#drive-solo.request-drive-radio(type="radio" name="driver" value="solo")
+                                    label.request-radio-lbl(for="drive-solo") Нужен водитель
+                                    input#drive-driver.request-drive-radio(type="radio" name="driver" value="need" checked="")
+                                    label.request-radio-lbl(for="drive-driver") Я сам водитель
+                                .request-car-box
+                                    .request-present Тип авто 
+                                    input#jeep(type="radio" name="car-type" value="" checked="")
+                                    label.request-radio-group-lbl(for="jeep")
+                                        img(src="./img/request_jeep.png" alt="img")
+                                    input#sedan(type="radio" name="car-type" value="")
+                                    label.request-radio-group-lbl(for="sedan")
+                                        img(src="./img/request_sedan.png" alt="img")
+                                    input(type="radio" id="sports" name="car-type" value="")
+                                    label.request-radio-group-lbl(for="sports")
+                                        img(src="./img/request_sports.png" alt="img")
+                                    input(type="radio" id="ponoram" name="car-type" value="")
+                                    label.request-radio-group-lbl(for="ponoram")
+                                        img(src="./img/request_ponoram.png" alt="img")
+                                    input(type="radio" id="small" name="car-type" value="")
+                                    label.request-radio-group-lbl(for="small")
+                                        img(src="./img/request_small.png" alt="img")
+                                input.btn-add(type="submit" value="Оставить Заявку")
+
+            section.parking
+                .wrapper
+                    h2.parking-ttl Наш автопарк 
+                    .parking-box
+                        a.parking-item(href="/")
+                            .parking-img
+                                img(src="./img/Parking_maserati.png" alt="img")
+                            h3.parking-item-ttl Maserati Gran Cabrio
+                        a.parking-item(href="/")
+                            .parking-img
+                                img(src="./img/Parking_kia.png" alt="img")
+                            h3.parking-item-ttl KIA Picanto 
+                        a.parking-item(href="/")
+                            .parking-img
+                                img(src="./img/Parking_porshe.png" alt="img")
+                            h3.parking-item-ttl Porsche Boxster
+                        a.parking-item(href="/")
+                            .parking-img
+                                img(src="./img/Parking_suv.png" alt="img")
+                            h3.parking-item-ttl Chevrolet Suburban
+                        a.parking-item(href="/")
+                            .parking-img
+                                img(src="./img/Parking_smart.png" alt="img")
+                            h3.parking-item-ttl Smart Fortwo
+                        a.parking-item(href="/")
+                            .parking-img
+                                img(src="./img/Parking_cadilack.png" alt="img")
+                            h3.parking-item-ttl Cadillac Escalade
+
+            section.transfer
+                .wrapper.wrapper-bg
+                    h2.transfer-ttl VIP Transfer - Лидер на рынке аренды автомобилей
+                    .transfer-content
+                        p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо.
+                        p Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку.
+                        p Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. Грустный реторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись.
+
+
+        include components/footer.pug                        
+        include components/script.pug

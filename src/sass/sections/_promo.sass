@@ -1,0 +1,160 @@
+.cart
+    padding: 20px 0px
+
+.cart-img
+    font-size: 0px
+
+.cart-gallery
+    padding: 0px 0px 20px
+
+.cart-about
+    font-size: 16px
+
+.cart-gallery-box
+    display: flex
+    flex-flow: wrap
+
+.cart-gallery-item-large
+    width: 100%
+    text-align: center
+    border: 1px solid $light-gray-color
+    margin-bottom: 10px
+    height: 288px
+    display: table
+    .cart-img
+      display: table-cell
+      vertical-align: middle
+      img
+        width: 100%
+
+.cart-gallery-item
+    width: 32.5%
+    margin-right: 1.25%
+    text-align: center
+    border: 1px solid $light-gray-color
+    margin-bottom: 5px
+    background-color: $white-color
+    &:nth-of-type(3n)
+      margin-right: 0px
+
+.cart-name
+    font-size: 20px
+    margin-bottom: 10px
+    color:  #b45500
+
+.cart-precence
+    display: flex
+    align-items: center
+    padding: 5px 0px 10px
+    span
+      margin-right: 10px
+
+.cart-info
+    width: 100%
+
+.cart-info
+    padding: 10px 0px
+
+.cart-add
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border: 1px solid #dddddd
+    border-radius: 3px
+    padding: 15px 10px
+    margin-bottom: 15px
+
+
+///
+.cart-about-info
+    li
+        font-size: 14px
+
+.cart-about-prices-list
+    padding: 5px 0px
+
+.cart-about-prices-list li> p
+    color: #b45500
+    font-size: 16px
+    font-weight: bold
+    padding: 5px 0px
+
+.cart-about-prices-list li 
+    display: flex
+    font-size: 14px
+    margin-bottom: 2px
+    span:nth-of-type(1)
+        background-color: #ffe848
+        width: 125px
+        padding: 5px 5px
+        text-align: center
+    span:nth-of-type(2)
+      background-color: #fff5aa
+      width: 200px
+      padding: 5px 5px
+      text-align: center
+        
+.cart-more
+    padding: 5px 0px
+    width: 100%
+
+.cart-more-descr h2
+    font-size: 16px
+    padding: 5px 0px
+
+.cart-more-descr
+    padding: 0px 0px 15px
+
+.btn-add-cart
+    background: linear-gradient(45deg, rgba(249,204,39,1) 0%,rgba(242,237,208,1) 100%)
+    color: white
+    display: block
+    height: 50px
+    line-height: 50px
+    text-align: center
+    color: black
+    font-weight: 300
+    border-radius: 5px
+    border: 1px solid orange
+    transition: 0.5s
+    &:hover
+        transition: 0.5s
+        background: white
+
+.cart-about > .btn-add-cart
+    display: none
+
+.cart-gallery > .cart-more
+    display: none
+
+@media(min-width: 768px)
+    .cart-about > .btn-add-cart
+        display: block
+        margin: 20px 0px 0px
+        max-width: 360px
+        height: 70px
+        line-height: 70px
+        width: 100%
+    .cart-more > .btn-add-cart
+        display: none
+    .cart-box
+        display: flex
+        justify-content: space-between
+        flex-flow: wrap
+    .cart-gallery
+        width: 44%
+    .cart-about
+        width: 56%
+        padding: 0px 0px 20px 20px
+        font-size: 18px
+    .cart-name
+        font-size: 24px
+    .cart-box > .cart-more
+        display: none
+    .cart-gallery > .cart-more
+        display: block
+
+
+
+
+

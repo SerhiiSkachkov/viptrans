@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <title>new</title>
+  </head>
+  <body>
+    <header class="App-header">
+      <div class="header">
+        <div class="wrapper">
+          <div class="header-box">
+            <div class="header-box-logo"><a class="logo" href=""><img src="./img/logo.svg" alt="logo"></a></div>
+            <nav class="header-main-nav">
+              <ul class="nav-list">
+                <li><a class="active" href="/">Главная</a></li>
+                <li><a href="/about">О компании</a></li>
+                <li><a href="/services">Сервис </a></li>
+                <li><a href="/online">Online-Бронирование</a></li>
+                <li><a href="/contact">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="hamburger hamburger--spin js-hamburger">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
+            <nav class="header-mobile-nav">
+              <ul class="nav-list">
+                <li><a class="active" href="/">Главная</a></li>
+                <li><a href="/about">О компании</a></li>
+                <li><a href="/services">Сервис </a></li>
+                <li><a href="/online">Online-Бронирование</a></li>
+                <li><a href="/contact">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main-wrap main-wrap-styled main-wrap-padding">
+      <div class="breadcrumbs">
+        <div class="wrapper">
+          <ul class="breadcrumbs-list">
+            <li><a href="">Главная</a><span>/</span></li>
+            <li>Услуги</li>
+          </ul>
+        </div>
+      </div>
+      <section class="order">
+        <div class="wrapper">
+          <div class="order-box">
+            <div class="order-content">
+              <ul class="order-head">
+                <li class="active" data-tab="#order-data"><span class="order-tabs-txt">Ввод данных</span><span class="order-head-arrow"></span></li>
+                <li data-tab="#order-check"><span class="order-tabs-txt">Проверка</span><span class="order-head-arrow"></span></li>
+                <li data-tab="#order-confirm"><span class="order-tabs-txt">Подтверждение</span></li>
+              </ul>
+              <div class="order-tab-content" id="order-data">
+                <form>
+                  <div class="order-way"><a class="btn-way" href="">В одну сторону</a><a class="btn-way" href="">В обе стороны</a></div>
+                  <div class="order-location-box">
+                    <select class="select-field" id="order-way-from">
+                      <option>От аэропорта</option>
+                      <option>Аэропорт</option>
+                      <option>От аэропорта</option>
+                    </select>
+                    <select class="select-field" id="order-way-to">
+                      <option>Аэропорт</option>
+                      <option>От аэропорта</option>
+                      <option>От аэропорта</option>
+                    </select>
+                    <select class="select-field" id="order-way-places">
+                      <option>Откуда</option>
+                      <option>От аэропорта</option>
+                      <option>От аэропорта</option>
+                    </select>
+                  </div>
+                  <div class="order-hotel">
+                    <input type="text" name="hotel" placeholder="Адрес или название отеля">
+                  </div>
+                  <div class="order-departure">
+                    <input class="order-departure-field order-departure-field-bg" id="order-time-departure" type="text" placeholder="Дата вылета">
+                    <input class="order-departure-field order-departure-field-bg" id="order-time-arrival" type="text" placeholder="Время прибытия">
+                    <input class="order-departure-field" id="departure-airlines" type="text" placeholder="Номер рейса">
+                  </div>
+                  <div class="order-contact">
+                    <input class="order-contact-field" type="text" name="mame" placeholder="Имя">
+                    <input class="order-contact-field" type="text" name="surname" placeholder="Фамилия">
+                    <input class="order-contact-field" type="text" name="phone" placeholder="Номер телефона">
+                    <input class="order-contact-field" type="text" name="email" placeholder="E-mail">
+                  </div>
+                  <div class="order-places-box">
+                    <select class="select-field" id="order-car-places">
+                      <option>Кол-во пассажиров</option>
+                      <option>Кол-во пассажиров</option>
+                      <option>Кол-во пассажиров</option>
+                    </select>
+                    <select class="select-field" id="order-car-child-places">
+                      <option>Детские кресла</option>
+                      <option>Детские кресла</option>
+                      <option>Детские кресла</option>
+                    </select>
+                    <select class="select-field" id="order-car-buster">
+                      <option>Бустер</option>
+                      <option>Бустер</option>
+                      <option>Бустер</option>
+                    </select>
+                    <select class="select-field" id="order-car-small-child-places">
+                      <option>Кресло младенцу</option>
+                      <option>Кресло младенцу</option>
+                      <option>Кресло младенцу</option>
+                    </select>
+                  </div>
+                  <div class="order-cars">
+                    <input type="radio" id="mercedes_e" name="car" value="mercedes_e" checked="checked">
+                    <label class="order-cars-lbl" for="mercedes_e">
+                      <div class="order-cars-lbl-img"><img src="./img/mercedes_e.png" alt="img"></div>
+                      <h3 class="order-cars-name">Мercedes Е class</h3>
+                    </label>
+                    <input type="radio" id="mercedes_s" name="car" value="mercedes_s">
+                    <label class="order-cars-lbl" for="mercedes_s">
+                      <div class="order-cars-lbl-img"><img src="./img/mercedes_s.png" alt="img"></div>
+                      <h3 class="order-cars-name">Мercedes S class</h3>
+                    </label>
+                    <input type="radio" id="mercedes_v" name="car" value="mercedes_v">
+                    <label class="order-cars-lbl" for="mercedes_v">
+                      <div class="order-cars-lbl-img"><img src="./img/mercedes_v.png" alt="img"></div>
+                      <h3 class="order-cars-name">Мercedes Vito</h3>
+                    </label>
+                    <input type="radio" id="mercedes_via" name="car" value="mercedes_via">
+                    <label class="order-cars-lbl" for="mercedes_via">
+                      <div class="order-cars-lbl-img"><img src="./img/mercedes_via.png" alt="img"></div>
+                      <h3 class="order-cars-name">Мercedes Viano</h3>
+                    </label>
+                  </div>
+                  <textarea class="order-comment" placeholder="Пожелания"></textarea>
+                  <div class="order-check">
+                    <input id="order-check" type="checkbox">
+                    <label class="order-check-lbl" for="order-check">Квитанция для бухгалтерии</label>
+                  </div><a class="js-order btn-order-submit" href="#order-check">Заказать трансфер</a>
+                </form>
+              </div>
+              <div class="order-tab-content order-tab-content-check" id="order-check">
+                <h3 class="order-tab-content-ttl">Проверьте Ваши данные</h3>
+                <div class="order-info-box">
+                  <div class="order-info-data">  
+                    <div class="order-info-data-field"><span>Ф.И.О: </span><span>Иванов Иван Иванович</span></div>
+                    <div class="order-info-data-field"><span>tel: </span><span>+380670676767</span></div>
+                    <div class="order-info-data-field"><span>email: </span><span>ivaniv.ivan.ibanivich@gmai.com</span></div>
+                    <div class="order-info-data-field order-info-data-field-way">Трансфер в одну сторону</div>
+                  </div>
+                  <div class="order-info-way-box">
+                    <div class="order-info-way-field"><span> <strong>От: </strong></span><span>Аэропорта Ларнаки</span></div>
+                    <div class="order-info-way-field"><span> <strong>До: </strong></span><span>Протарас-Пернера</span></div>
+                    <div class="order-info-way-field order-info-way-field-hotel"><span> <strong>Адрес: </strong></span><span>Гостиница Hilton</span></div>
+                  </div>
+                  <div class="order-info-location-box">
+                    <div class="order-info-location-field order-info-location-field-bg">20/03/18</div>
+                    <div class="order-info-location-field order-info-location-field-bg">20/03/18, 20:35</div>
+                    <div class="order-info-location-field">Рейс: RTYu789</div>
+                  </div>
+                  <div class="order-info-places-box">
+                    <div class="order-info-places-field">Кол-во пассажиров: 5</div>
+                    <div class="order-info-places-field">Детские кресла: 5</div>
+                    <div class="order-info-places-field">Бустер: 1</div>
+                    <div class="order-info-places-field">Кресло младенцу: 0</div>
+                  </div>
+                  <div class="order-info-car">
+                    <div class="order-info-car-ttl">Выбранный вами автомобиль</div>
+                    <div class="order-info-car-img"><img src="./img/mercedes_e.png" alt="img"></div>
+                    <div class="order-info-car-name">Мercedes Е class</div>
+                  </div>
+                  <div class="order-info-comment"><strong>Ваши пожелания: </strong>По прилету 3 порции морожена детям и бутылку шампанского.</div>
+                  <div class="order-return-form-box"><a class="js-order order-return-form" href="#order-data">Вернуться к заполнению формы</a></div>
+                  <div class="order-info-price-box">Общая цена трансфера: <span>970 евро</span></div>
+                  <div class="order-info-btn-box"><a class="btn-info-add btn-info-add" href="">Оплптить по приезду</a><a class="btn-info-add btn-info-add-online" href="">Оплптить онлайн*</a></div>
+                </div>
+              </div>
+              <div class="order-tab-content" id="order-confirm">13</div>
+            </div>
+            <div class="order-side">
+              <div class="order-side-ttl">Заказ трансфера</div>
+              <div class="order-side-content">
+                <p>Все трансферы индивидуальные</p>
+                <p>При заказе такси/трансфера в обе стороны скидка 5%</p>
+                <p>Детские кресла, бустеры включены в цену трансфера </p>
+                <p>Время ожидания в аэропорту включено в цену трансфера номер рейса отслеживается нами (не стоит беспокоиться в случае задержки рейса или преждевременной посадки), водитель будет в аэропорту во время посадки самолёта </p>
+                <p>Водитель будет держать в руках табличку при выходе из аэропорта на которой будет написано ваше Имя и Фамилия указанные при заказе трансфера</p>
+              </div>
+              <div class="order-side-btn-box"><a class="btn-order btn-order-way" href=""><span class="icon icon-route"></span><span class="btn-order-txt">Длительность поездки</span></a><a class="btn-order btn-order-donload" href="" download> <span class="icon icon-file"></span><span class="btn-order-txt">Подробный прайс</span></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-box">
+          <div class="footer-promo"><a class="footer-logo" href="/"><img src="./img/logo.svg" alt="logo"></a>
+            <div class="footer-def">© 2017 Все права защищены </div><a class="footer-contact" href="tel:+0 800 500 00 50">0 800 500 00 50</a><a class="footer-contact" href="mailto:nfo@viptransfer.do">nfo@viptransfer.do</a>
+          </div><a class="footer-btn" href="/"></a>
+          <div class="footer-inform">
+            <ul class="footer-nav">
+              <li><a href="/">Главная </a><span>/</span></li>
+              <li><a href="/">О компании </a><span>/</span></li>
+              <li><a href="/">Сервис</a><span>/</span></li>
+              <li><a href="/">Online-Бронирование </a><span>/</span></li>
+              <li><a href="/">Контакты</a></li>
+            </ul>
+            <ul class="pay">
+              <li><a class="pay-item pay-item-viza" href=""></a></li>
+              <li><a class="pay-item pay-item-master" href=""></a></li>
+              <li><a class="pay-item pay-item-american" href=""></a></li>
+            </ul>
+          </div>
+          <ul class="pay">
+            <li><a class="pay-item pay-item-viza" href=""></a></li>
+            <li><a class="pay-item pay-item-master" href=""></a></li>
+            <li><a class="pay-item pay-item-american" href=""></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>

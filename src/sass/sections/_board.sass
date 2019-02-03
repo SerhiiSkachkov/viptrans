@@ -1,0 +1,118 @@
+.board-box .title
+    margin: 30px 0px
+
+.board-info
+    padding-left: 5px
+    padding-right: 5px
+
+.board-info .info
+    color: gray
+    font-size: 16px
+    margin-bottom: 5px
+
+.board-info .icon
+    color: $primary-color
+    margin-right: 10px
+
+.board-box-premium .board-item
+    background: rgba(255,191,61,.06)
+    position: relative
+    border: none
+    margin-bottom: 10px
+    
+.board-item
+    padding: 0px 0px 10px
+    margin-bottom: 10px
+
+.board-item-img-top
+    position: absolute
+    top: 0px
+    left: 0px
+    background: url("../img/top.png")  center top no-repeat /cover
+    width: 80px
+    height: 80px
+
+.board-item a
+    display: block
+
+.board-item-img
+    margin-bottom: 5px
+
+.board-item-img img
+    width: 100%
+    display: block
+
+.board-link-ttl
+    color: black
+    font-weight: bold
+    height: 48px
+    overflow: hidden
+    margin-bottom: 10px
+    &:hover
+        color: $primary-color
+
+.board-item-price
+    display: none
+
+.info-bredcrumbs
+    display: flex
+    color: gray
+    font-size: 16px
+    margin-bottom: 5px
+
+.info-bredcrumbs-list
+    display: flex
+
+@media(min-width: 540px)
+    .board-item
+        display: flex
+        padding-right: 5px
+        padding-bottom: 0px
+    .board-img-link
+        width: 40%
+        padding-right: 5px
+    .board-info
+        width: 60%
+        padding-top: 5px
+    .board-link-ttl
+        height: 34px
+        margin-bottom: 5px
+    .board-item-img
+        font-size: 0px
+        margin-bottom: 0px
+
+@media(min-width: 768px)
+    .board-info
+        padding-top: 10px
+    .board-link-ttl
+        font-size: 18px
+        height: 50px
+    .board-img-link
+        padding-right: 25px
+
+@media(min-width: 992px)
+    .info-phone-number:hover
+        color: $primary-color 
+    .board-item .info-price
+        display: none
+    .board-info-price
+        display: none
+    .board-link-ttl
+        height: 15px
+        font-size: 14px
+        margin-bottom: 10px
+    .board-img-link 
+        width: 23%
+    .board-info 
+        width: 60%
+        padding-top: 10px
+    .board-item-price
+        width: 19%
+        text-align: right
+        padding-top: 10px
+        display: block
+        height: 30px
+        font-size: 16px
+        margin-bottom: 10px
+        font-weight: bold
+        color: #0072bc

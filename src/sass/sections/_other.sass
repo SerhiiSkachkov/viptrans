@@ -1,0 +1,93 @@
+.other
+  padding: 30px 0px
+
+.other-ttl
+  margin: 10px 0px
+  font-size: 28px
+  text-align: center
+  font-weight: 100
+
+.other-box
+  padding: 30px 0px
+
+.other-item
+  width: 100%
+  padding: 10px 0px
+  text-align: center
+  &:hover
+    .other-img img
+      transform: scale(1.03)
+
+
+.other-item-ttl
+  margin: 5px 0px
+  color: black
+  font-weight: 300
+  font-size: 22px
+  max-width: 250px
+  margin: 0 auto
+
+.other-item-content
+  max-width: 200px
+  margin: 0 auto
+
+.btn-other
+  margin: 5px 5px
+  padding: 5px 10px
+  color: #b45500
+  font-weight: 300
+  font-size: 15px
+  z-index: 1
+  position: relative
+  border-bottom: 2px solid #b45500
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 0%
+    left: 0px
+    right: 0px
+    z-index: -1
+    background-color: #b45500
+    transition: 0.5s
+    bottom: 0
+  &:hover
+    color: white
+    &:before
+      height: 100%
+  &:hover
+    cursor: pointer
+
+.other-item-price
+  color: #ef8835
+  font-weight: 400
+  text-align: center
+
+.other-item-about-list
+  text-align: left
+
+.other-img
+  margin-bottom: 10px
+
+.other-img img
+  display: block
+  margin: 0 auto
+  transition: 0.5s
+
+@media(min-width: 540px)
+  .other-box
+    display: flex
+    flex-flow: wrap
+  .other-item
+    width: 50%
+    padding: 10px
+  .other-img
+    height: 150px
+
+@media(min-width: 768px)
+  .other-ttl
+    font-size: 35px
+
+@media(min-width: 992px)
+  .other-item
+    width: 33.3%
